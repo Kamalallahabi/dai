@@ -5,10 +5,10 @@ setInterval(function() {
     if (myroom == "k0he3mfe41") {
         if (myroom == false) {
             myroom = true;
-            $('#chats').addClass('sudia');
+            $('#chats').addClass('k0he3mfe41');
         }
     } else if (myroom == true) {
         myroom = false;
-        $("#chats").removeClass("sudia");
+        $("#chats").removeClass("k0he3mfe41");
     }
 }, 0x14);
