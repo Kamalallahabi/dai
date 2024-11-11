@@ -1,13 +1,13 @@
-// إضافة CSS للصفحة مباشرةً
+// إضافة CSS مخصص للغرفة
 $("<style>").text(`
     .nosel.d-flex.room.rk0he3mfe41 .label-primary {
         letter-spacing: 1px;
         color: #0c4f4a;
-        border-radius: 15px 0px 15px 0px !important;
+        border-radius: 15px 0 15px 0 !important;
         height: 27px;
         margin-top: 60px !important;
-        background-color: #d9534f00;
-        text-shadow: 0px 0px 0px #fff, 0 0 25px #fff, 0 0 5px #fff!important;
+        background-color: transparent;
+        text-shadow: 0 0 0 #fff, 0 0 25px #fff, 0 0 5px #fff !important;
         background-image: url(https://up6.cc/2023/03/167959927008681.png);
         background-size: cover;
     }
@@ -15,17 +15,17 @@ $("<style>").text(`
     .nosel.d-flex.room.rk0he3mfe41 .corner.fa.fa-user.label.uc.fa-microphone.label-danger {
         letter-spacing: 1px;
         color: #0c4f4a;
-        border-radius: 15px 0px 15px 0px !important;
+        border-radius: 15px 0 15px 0 !important;
         height: 27px;
         margin-top: 60px !important;
-        background-color: #d9534f00;
-        text-shadow: 0px 0px 0px #fff, 0 0 25px #fff, 0 0 5px #fff!important;
+        background-color: transparent;
+        text-shadow: 0 0 0 #fff, 0 0 25px #fff, 0 0 5px #fff !important;
         background-image: url(https://up6.cc/2023/03/167959927008681.png);
         background-size: cover;
     }
 
     .nosel.d-flex.room.rk0he3mfe41.bord {
-        border-inline: 0px solid #4c121e !important;
+        border-inline: 0 !important;
     }
 
     .nosel.d-flex.room.rk0he3mfe41 .dots.mini.u-msg {
@@ -41,7 +41,7 @@ $("<style>").text(`
     .nosel.d-flex.room.rk0he3mfe41 {
         background-image: url(https://up6.cc/2024/05/171562793731772.gif);
         background-size: cover;
-        border-radius: 15px 0px 15px 0px;
+        border-radius: 15px 0 15px 0;
     }
 
     .nosel.d-flex.room.rk0he3mfe41 .fitimg.u-pic.borderg {
@@ -72,7 +72,7 @@ $("<style>").text(`
 `).appendTo("head");
 
 // تفعيل وإزالة الأنماط عند الانضمام إلى الغرفة
-var myroom = false;
+let myroom = false;
 setInterval(function() {
     if (myroom === "k0he3mfe41") {
         if (!myroom) {
