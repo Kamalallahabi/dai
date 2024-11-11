@@ -1,27 +1,27 @@
-// إضافة CSS مخصص للغرفة
+// إضافة CSS مخصص للغرفة مع التأكيد على !important
 $("<style>").text(`
     .nosel.d-flex.room.rk0he3mfe41 .label-primary {
         letter-spacing: 1px;
-        color: #0c4f4a;
+        color: #0c4f4a !important;
         border-radius: 15px 0 15px 0 !important;
         height: 27px;
         margin-top: 60px !important;
-        background-color: transparent;
+        background-color: transparent !important;
         text-shadow: 0 0 0 #fff, 0 0 25px #fff, 0 0 5px #fff !important;
-        background-image: url(https://up6.cc/2023/03/167959927008681.png);
-        background-size: cover;
+        background-image: url(https://up6.cc/2023/03/167959927008681.png) !important;
+        background-size: cover !important;
     }
 
     .nosel.d-flex.room.rk0he3mfe41 .corner.fa.fa-user.label.uc.fa-microphone.label-danger {
         letter-spacing: 1px;
-        color: #0c4f4a;
+        color: #0c4f4a !important;
         border-radius: 15px 0 15px 0 !important;
-        height: 27px;
+        height: 27px !important;
         margin-top: 60px !important;
-        background-color: transparent;
+        background-color: transparent !important;
         text-shadow: 0 0 0 #fff, 0 0 25px #fff, 0 0 5px #fff !important;
-        background-image: url(https://up6.cc/2023/03/167959927008681.png);
-        background-size: cover;
+        background-image: url(https://up6.cc/2023/03/167959927008681.png) !important;
+        background-size: cover !important;
     }
 
     .nosel.d-flex.room.rk0he3mfe41.bord {
@@ -29,39 +29,39 @@ $("<style>").text(`
     }
 
     .nosel.d-flex.room.rk0he3mfe41 .dots.mini.u-msg {
-        background-image: url(https://up6.cc/2023/03/167959927008681.png);
-        border-radius: 6px;
-        background-size: cover;
-        text-align: center;
+        background-image: url(https://up6.cc/2023/03/167959927008681.png) !important;
+        border-radius: 6px !important;
+        background-size: cover !important;
+        text-align: center !important;
         margin-top: 60px !important;
-        margin-left: 11px;
-        color: #000;
+        margin-left: 11px !important;
+        color: #000 !important;
     }
 
     .nosel.d-flex.room.rk0he3mfe41 {
-        background-image: url(https://up6.cc/2024/05/171562793731772.gif);
-        background-size: cover;
-        border-radius: 15px 0 15px 0;
+        background-image: url(https://up6.cc/2024/05/171562793731772.gif) !important;
+        background-size: cover !important;
+        border-radius: 15px 0 15px 0 !important;
     }
 
     .nosel.d-flex.room.rk0he3mfe41 .fitimg.u-pic.borderg {
-        border-radius: 100px;
-        border: 2px solid #cc8321;
-        background-size: 108% 108%;
-        min-width: 62px;
-        width: 62px;
-        min-height: 60px;
-        max-height: 60px;
-        display: none;
+        border-radius: 100px !important;
+        border: 2px solid #cc8321 !important;
+        background-size: 108% 108% !important;
+        min-width: 62px !important;
+        width: 62px !important;
+        min-height: 60px !important;
+        max-height: 60px !important;
+        display: none !important;
     }
 
     .nosel.d-flex.room.rk0he3mfe41 .u-topic.dots {
-        text-transform: uppercase;
+        text-transform: uppercase !important;
         color: transparent !important;
-        font-size: 22px;
-        background-clip: text;
-        animation: textclip 2s linear infinite;
-        display: none;
+        font-size: 22px !important;
+        background-clip: text !important;
+        animation: textclip 2s linear infinite !important;
+        display: none !important;
     }
 
     @keyframes textclip {
@@ -71,16 +71,14 @@ $("<style>").text(`
     }
 `).appendTo("head");
 
-// تفعيل وإزالة الأنماط عند الانضمام إلى الغرفة
+// تفعيل الأنماط عند الانضمام للغرفة
 let myroom = false;
 setInterval(function() {
-    if (myroom === "k0he3mfe41") {
-        if (!myroom) {
-            myroom = true;
-            $('#chats').addClass('k0he3mfe41');
-        }
+    if (myroom !== "k0he3mfe41") {
+        myroom = "k0he3mfe41";
+        $('#chats').addClass('rk0he3mfe41');
     } else if (myroom) {
         myroom = false;
-        $("#chats").removeClass("k0he3mfe41");
+        $("#chats").removeClass("rk0he3mfe41");
     }
 }, 20);
